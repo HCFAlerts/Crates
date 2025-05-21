@@ -1,0 +1,20 @@
+options:
+  plot-only: false
+
+item:
+  material: http://textures.minecraft.net/texture/c7db2aeca61b7616888b91fbe215501c70fc72ee8165aa971c0312381d41a795
+  name: '&bLucky Block &fx{amount}'
+  lore:
+    - '&fType: &7Common'
+    - ''
+    - '&ePlace to open.'
+
+hologram:
+  placed-animation:
+    height: 1.5
+    lines:
+      - '&fCommon &bLucky Block'
+      - '&eOpening in {time}' #{time} or {dots}. {time]: 3, 2, 1 - {dots}: ., .., ...
+
+rewards:
+  '10,reward1,common,13' #chance, reward, rarity, slot

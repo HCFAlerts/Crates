@@ -1,0 +1,54 @@
+authors: [Traduciendo]
+name: Crates
+version: 1.0
+main: me.traduciendo.crates.Crates
+description: A Crates plugin
+website: dsc.gg/liteclubdevelopment
+api-version: 1.8
+softdepend:
+   - Nexlon
+   - Azurite
+   - HCF
+   - HCFactions
+   - Voltage
+   - VoltageHCF
+   - Clans
+   - mClans
+   - Vapor
+   - Void
+   - Lazarus
+   - rLazarus
+   - Neon
+
+commands:
+   crates:
+      aliases: ["crate", "cr"]
+   luckyblocks:
+      description: Luckyblocks
+      aliases: ["luckyblock", "lb"]
+   airdrop:
+      description: Airdrop
+      aliases: ["airdrops"]
+   stelarbox:
+      aliases: ["stelarboxes"]
+      description: Stelarbox
+   mysterybox:
+      aliases: [mysteryboxes]
+   package reload:
+      description: Reload the plugin
+      aliases: [packages reload]
+   package create:
+      description: Create a new package
+      aliases: [packages create]
+   package delete:
+      description: Delete a package
+      aliases: [packages delete]
+   package edit:
+      description: Open package edit menu
+      aliases: [packages edit]
+   package give:
+      description: Give packages
+      aliases: [packages give]
+   package list:
+      description: List packages
+      aliases: [packages list]

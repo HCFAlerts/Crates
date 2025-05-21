@@ -1,0 +1,164 @@
+#=============================================#
+#                                             #
+#               Crates | v1.0                 #
+#            LiteClubDevelopment              #
+#                                             #
+#=============================================#
+
+LICENSE: '98HVS-XSAV3-NOX5B-OI1F4'
+
+#=============================================#
+#            Crates Configuration             #
+#=============================================#
+
+OPEN-CRATE-KEY-ANYWHERE: true
+# You can change the Crate block on crates.yml
+DEFAULT-CRATE-BLOCK: "CHEST" # Available blocks: ENDERCHEST, ENCHANTMENT_TABBLE, BEACON and WORKBENCH
+DEFAULT-CRATE-COLOR: "WHITE" # All colors available.
+DEFAULT-CRATE-KEY-ITEM: "TRIPWIRE_HOOK" # All items available.
+DEFAULT-CRATE-HOLOGRAM-ITEM: "PAPER" # All items available.
+CRATE-HOLOGRAM-HEIGHT: 2.2
+CRATE-HOLOGRAM-LINES:
+  - "{crate_color}{crate}&7{crate_color} Crate"
+  - "&e&l&nstore.example.net"
+CRATE-KEY-LORE:
+  - "&7Available at &e&lstore.example.net"
+
+#=============================================#
+#          LuckyBlocks Configuration          #
+#=============================================#
+
+LUCKYBLOCK-TEXTURE-VALUE: "eyJ0aW1lc3RhbXAiOjE1ODQ5MTcyMzY4MDMsInByb2ZpbGVJZCI6Ijc5ZDE5ZjEzZmFlNjRhZmFiNmIwNTc1Mzc2OTY4M2MwIiwicHJvZmlsZU5hbWUiOiJUZXh0dXJlZElEZW50aXR5IiwidGV4dHVyZXMiOnsib2RlYSI6eyJ1cmwiOiJodHRwOi8vdGV4dHVyZXMubWluZWNyYWZ0Lm5ldC90ZXh0dXJlLzM5ODRiMWY3NmE3NzRlYzc1ZWRlMGM1NGE5NjA5NzcwNDExMDQxNjEwMmEzYjU3YmQzZDc5ZDc1ZGI5MjJjNDIifX19"
+LUCKYBLOCK-TEXTURE-SIGNATURE: "eRVHBIfH2BPZdL9NN34mSfCwFQbHQifCm91x1VpkTUTLRBN9fIZmrdcFQG+Q/B6VPdOl+5WgVVg4ommlGHVtsHV6XGyIKUZLJS8kVDSBL30y9w2Fs1lwn4RQJOTYmAnFjKEL4rm2OEXZsqU44vqPOI12Z7cFk4kRXGz43W23J1yQzfhS+50MyGe7L/WZBzN+zwFvDdOSzAolLWX7KrZmSEeqZ4BxDfiUSQ1LvXRIzJ3EZcD/NwTswprBBPUKmz1pbwXzOCa5VThJVOYG7WxctvIKYsmOCDmAUzPyjx2zBZgQ1RNW+uKk33BjJTmR8XSOdFhmu12FcbLKv9U74ukV7hG5RhGCStX5QyzVkpaJ7y3uYtTE5GmGbSZoE5nYJ8rUJeuGgbbwvgBWfoiwPn5nmjM2S3S1r+FrdHctfFsLJhVtFslOM5GC8Pq4OgBGA6NnSm5VpsvQauedYFC7NNS6y5MYDbWGbLo6eX9D7Y7BmbjNiL42eHW8jEToUy7dTxlXsqwgoWh15sX1SscD0p/X4p6eSYhwALXfcmCxhlwo3hFo="
+
+#=============================================#
+#           Packages Configuration            #
+#=============================================#
+
+PACKAGE-CREATE: "&7[&bPackages&7] &a&l%PACKAGE%&a Package successfully created."
+PACKAGE-DELETE: "&7[&bPackages&7] &a&l%PACKAGE%&a Package successfully deleted."
+PACKAGE-RECEIVE: "&7[&bPackages&7] &aGive x%AMOUNT% %PACKAGE% &ato &f%TARGET%&a."
+PACKAGE-GIVE: "&7[&bPackages&7] &aYou've received x%AMOUNT% %PACKAGE%&a."
+PACKAGE-GIVE-ALL: "&7[&bPackages&7] &aAll players received x%AMOUNT% %PACKAGE%&a."
+PACKAGE-ALREADY-EXIST: "&7[&bPackages&7] &cPackage &l%PACKAGE%&c already exist."
+PACKAGE-NOT-EXIST: "&7[&bPackages&7] &cPackage &l%PACKAGE%&c not exist."
+PACKAGE-EMPTY: "&7[&bPackages&7] &cThis package is empty."
+PACKAGE-INVENTORY-FULL: "&7[&bPackages&7] &cYour inventory is full."
+PACKAGE-EDIT-LOOT: "&7[&bPackages&7] &aSuccessfully edit &l%PACKAGE%&a items."
+
+#=============================================#
+#           StelarBox Configuration           #
+#=============================================#
+
+ICON:
+  DISPLAY-NAME: '&d&lStelarBox &7(Right-Click)'
+  MATERIAL: ENDER_CHEST
+  MATERIAL-DATA: 0
+  LORE:
+    - '&fTier: &lIII'
+    - ''
+    - '&eRight-Click to open.'
+    - '&eShift + Right-Click to fast open.'
+
+CONFIG:
+  AMOUNT: 2 # 1 or 2
+  FAST-OPEN: true
+  PANES:
+    TYPES: [15]
+    GLOW: false
+  NAMES:
+    GUI-BOX: "StelarBox"
+    GUI-LOOT: "StelarBox Loot"
+  REWARD-STACK:
+    DISPLAY-NAME: '&d&l???'
+    MATERIAL: CHEST
+    MATERIAL-DATA: 0
+    LORE:
+      - '&7Click here to open a &lTier III Rewards&7.'
+  SOUNDS:
+    OPEN: "CHEST_OPEN"
+    REWARDS: "NOTE_PLING"
+  PARTICLES:
+    OPEN: "CLOUD"
+    REWARDS: "CRIT"
+    AMOUNT: 10
+MESSAGES:
+  RECEIVE: "&aYou have received x%amount% %reward% &aon StelarBox"
+  NO-PERMS: "&cYou don't have sufficient permissions"
+  CONSOLE: "&cThis command is only for players."
+
+#=============================================#
+#          MysteryBox Configuration           #
+#=============================================#
+
+OPTIONS:
+  MESSAGE: "              &7▶ store.example.net ◀"
+  LOOTBOX-ITEM:
+    MATERIAL: ENDER_CHEST
+    DISPLAY-NAME: '&5&lMystery Box'
+    ITEM-META: 0
+    LORES:
+      - '&7▶ store.example.net ◀'
+      - '&a'
+      - '&7&lBasic'
+      - '&7▶ &f32x Block of Emerald'
+      - '&7▶ &f32x Block of Diamond'
+      - '&a'
+      - '&5&lSpecial'
+      - '&7▶ &6&l500x Coins'
+      - '&7▶ &6&l750x Coins'
+REWARDS:
+  FINAL-ITEMS:
+    500COINS:
+      MATERIAL: GOLD_NUGGET
+      DISPLAY-NAME: '&6&l500x Coins'
+      ITEM-META: 0
+      AMOUNT: 1
+      CHANCE: 69
+      COMMANDS:
+        - coins add {PLAYER} 500
+      LORES:
+        - '&7'
+        - '&7Use /shop to see what you can'
+        - '&7buy with coins.'
+      ENCHANTS:
+        - DURABILITY:10
+    750COINS:
+      MATERIAL: GOLD_NUGGET
+      DISPLAY-NAME: '&6&l750x Coins'
+      ITEM-META: 0
+      AMOUNT: 1
+      CHANCE: 39
+      COMMANDS:
+        - coins add {PLAYER} 750
+      LORES:
+        - '&7'
+        - '&7Use /shop to see what you can'
+        - '&7buy with coins.'
+      ENCHANTS:
+        - DURABILITY:10
+  REGULAR-ITEMS:
+    DIAMOND-BLOCKS:
+      MATERIAL: DIAMOND_BLOCK
+      DISPLAY-NAME: '&fBlock of Diamond'
+      ITEM-META: 0
+      AMOUNT: 32
+      CHANCE: 49
+      COMMANDS:
+        - give {PLAYER} 57 48
+      LORES: {}
+      ENCHANTS: {}
+    EMERALD-BLOCKS:
+      MATERIAL: EMERALD_BLOCK
+      DISPLAY-NAME: '&fBlock of Emerald'
+      ITEM-META: 0
+      AMOUNT: 32
+      CHANCE: 49
+      COMMANDS:
+        - give {PLAYER} 133 32
+      LORES: {}
+      ENCHANTS: {}
+
+#=============================================#
+#                 The end...                  #
+#=============================================#

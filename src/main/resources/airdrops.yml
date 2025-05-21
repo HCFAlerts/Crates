@@ -1,0 +1,65 @@
+AIRDROPS:
+  CHRISTMAS:
+    MATERIAL: DISPENSER
+    DISPLAYNAME: "&2&lC&c&lh&2&lr&c&li&2&ls&c&lt&2&lm&c&la&2&ls &c&lA&2&li&c&lr&2&ld&c&lr&2&lo&c&lp"
+    LORE:
+      - "&fType: &5Special"
+      - ""
+      - "&ePlace to open."
+    DESTROY-TIME: 5
+    FIREWORK:
+      POWER: 1
+      COLOR: AQUA
+      TYPE: CREEPER
+      ENABLED: true
+    HOLOGRAM:
+      ENABLED: true
+      MAIN-LINE: "&f* <name> &f*"
+      SECOND-LINE: "&eDestroying in &f<countdown>s&e."
+    REWARDS:
+      0:
+        NAME: "Lite Club Development"
+        MATERIAL: WATER_BUCKET
+        AMOUNT: 1
+        DATA: 0
+        CHANCE: 50.0
+        LORE:
+          ENABLED: true
+          LIST:
+            - "&7dsc.gg/liteclubdevelopment"
+        ENCHANTMENTS:
+          ENABLED: false
+          LIST:
+            - "DURABILITY:1"
+  NORMAL:
+    MATERIAL: DISPENSER
+    DISPLAYNAME: "&9&lAirdrop"
+    LORE:
+      - "&fType: &7Common"
+      - ""
+      - "&ePlace to open."
+    DESTROY-TIME: 5
+    FIREWORK:
+      POWER: 1
+      COLOR: AQUA
+      TYPE: CREEPER
+      ENABLED: true
+    HOLOGRAM:
+      ENABLED: true
+      MAIN-LINE: "&f* <name> &f*"
+      SECOND-LINE: "&eDestroying in &f<countdown>s&e."
+    REWARDS:
+      0:
+        NAME: "Lite Club Development"
+        MATERIAL: WATER_BUCKET
+        AMOUNT: 1
+        DATA: 0
+        CHANCE: 50.0
+        LORE:
+          ENABLED: true
+          LIST:
+            - "&7dsc.gg/liteclubdevelopment"
+        ENCHANTMENTS:
+          ENABLED: false
+          LIST:
+            - "DURABILITY:1"
